@@ -16,6 +16,7 @@ class Test_Chrome (unittest.TestCase):
 
     def test_chrome (self):
         self.browser.get("https://www.google.com")
+        self.browser.save_screenshot('screenshot.png')
         self.assertIn('Google', self.browser.title)
 
     @classmethod

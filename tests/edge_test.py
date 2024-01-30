@@ -16,6 +16,7 @@ class Test_Edge (unittest.TestCase):
 
     def test_edge (self):
         self.browser.get("https://www.google.com")
+        self.browser.save_screenshot('screenshot2.png')
         self.assertIn('Google', self.browser.title)
 
     @classmethod

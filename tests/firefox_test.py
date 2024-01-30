@@ -16,6 +16,7 @@ class Test_Firefox (unittest.TestCase):
 
     def test_firefox (self):
         self.browser.get("https://www.google.com")
+        self.browser.save_screenshot('screenshot3.png')
         self.assertIn('Google', self.browser.title)
 
     @classmethod

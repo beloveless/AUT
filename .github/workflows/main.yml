@@ -51,7 +51,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Screenshot
-          path: screenshot.png
+          path: 
+            screenshot.png
+            screenshot2.png
+            screenshot3.png
 
       - name: stop docker
         run: docker stop docker-apache
