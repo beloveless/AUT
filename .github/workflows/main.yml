@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Screenshot
-          path: 
+          path: |
             screenshot.png
             screenshot2.png
             screenshot3.png
